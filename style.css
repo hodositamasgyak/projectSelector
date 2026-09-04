@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 20vh;
+}
