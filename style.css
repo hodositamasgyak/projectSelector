@@ -1,16 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: beige;
-    font-family: "Oswald", sans-serif;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-}
 header{
+    padding: ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,4 +11,66 @@ header{
     color: white;
     width: 100vw;
     height: 20vh;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    border-color: #007acc;
+    background-color: #252526;
+}
+
+.folder-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+.empty-msg {
+    color: #888;
 }
